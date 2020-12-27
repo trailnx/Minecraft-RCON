@@ -1,37 +1,34 @@
-## Welcome to GitHub Pages
+# Minecraft-RCON
+Simple Minecraft RCON Web Console (using PHP, Bootstrap and Javascript) 
 
-You can use the [editor on GitHub](https://github.com/trailnx/Minecraft-RCON/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Inspired by [Minecraft-RCON-Console](https://github.com/ekaomk/Minecraft-RCON-Console) and using [PHP-Minecraft-Rcon](https://github.com/thedudeguy/PHP-Minecraft-Rcon).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+![Sample](samples/sample.png)
 
-### Markdown
+![Sample Mobile](samples/sample-mobile.png)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Configuration
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1. Edit your Minecraft server `server.properties` configuration file in order to enable RCON:
+```
+enable-rcon=true
+rcon.port=25575
+rcon.password=xtMJsVtmx0XypuId7jIb
+```
+2. Restart your Minecraft server.
+3. Download/Clone the Minecraft RCON Web Console files and edit the `config.php` file. Use the same rcon password and port than the one set in `server.properties`:
+```
+$rconHost = "localhost";
+$rconPort = 25575;
+$rconPassword = "xtMJsVtmx0XypuId7jIb";
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Warnings
 
-### Jekyll Themes
+* Provided as it is, **this console has no authentication check**, so anybody with access to this console can run any commands on the Minecraft server. Please check at least the documentations below, about how to setup some basic http authentification on your web server, in order to restrict the access to the console:
+ * [For Apache 2.4 users](https://httpd.apache.org/docs/2.4/howto/auth.html)
+ * [For NGinx users](https://nginx.org/en/docs/http/ngx_http_auth_basic_module.html)
+* Use a strong custom random RCON password (change the default one provided here) for more security.
+* Set up your firewall in order to allow only the web server to communicate with the Minecraft server through the RCON port set, for more security.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/trailnx/Minecraft-RCON/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
