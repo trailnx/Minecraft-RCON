@@ -1,3 +1,23 @@
+<head>
+  <!-- Primary Meta Tags -->
+<meta name="title" content="MConsole">
+<meta name="description" content="MConsole, a small project that uses Minecraft's RCON to execute server commands thru a webpage.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mcc.lualearners.cf/">
+<meta property="og:title" content="MConsole">
+<meta property="og:description" content="MConsole, a small project that uses Minecraft's RCON to execute server commands thru a webpage.">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://mcc.lualearners.cf/">
+<meta property="twitter:title" content="MConsole">
+<meta property="twitter:description" content="MConsole, a small project that uses Minecraft's RCON to execute server commands thru a webpage.">
+<meta property="twitter:image" content="">
+  </head>
+
 # Minecraft-RCON
 Simple Minecraft RCON Web Console (using PHP, Bootstrap and Javascript) 
 
