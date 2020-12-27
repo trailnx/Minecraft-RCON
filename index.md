@@ -3,9 +3,9 @@ Simple Minecraft RCON Web Console (using PHP, Bootstrap and Javascript)
 
 Inspired by [Minecraft-RCON-Console](https://github.com/ekaomk/Minecraft-RCON-Console) and using [PHP-Minecraft-Rcon](https://github.com/thedudeguy/PHP-Minecraft-Rcon).
 
-![Sample](samples/sample.png)
+![Sample](sample.png)
 
-![Sample Mobile](samples/sample-mobile.png)
+![Sample Mobile](sample-mobile.png)
 
 ## Configuration
 
